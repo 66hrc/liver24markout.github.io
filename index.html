@@ -49,26 +49,20 @@
     });
 
     /* コピー */  
-    document.addEventListener('DOMContentLoaded', function() {
-    function copyClipboard(event) {
-        const clipboard = document.createElement('textarea');
-        clipboard.value = event.target.previousElementSibling.value;
-        event.target.appendChild(clipboard);
-        clipboard.select();
-        document.execCommand('copy');
-        event.target.removeChild(clipboard);
+    var clipboadCopy = function(){
+    var urltext = document.getElementById("Outstring");
+    urltext.select();
+    document.execCommand("copy");
+    alert("コピーしました");
     }
-    const buttons = document.getElementsByClassName('copy_clipboard');
-    for(let i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', copyClipboard);
-    }
-    });
-
+    </script>
     </script>
 
 <body>
 <h1>ファンマーク出てくるやつ</h1>
 卒業ライバーは除く作業時点の元JPメンバーのみ、統合後への更新追加は時間のある時<br>
+<input id="button01" type="button" value="出力実行"/>
+<input type="button" value="コピー" onclick="clipboadCopy()">
 <input type="button" value="全て選択" onclick="All_check(true);">
 <input type="button" value="全て解除" onclick="All_check(false);">
 <input type="text" id="combine_str" placeholder="連結文字列：、や・など">
@@ -231,10 +225,9 @@
                 </tr>
             </table>
 
-            <input id="button01" type="button" value="実行"/>
+
         </form>
     </div>
     <textarea type="text" id="Outstring" placeholder="ここに結果がでます"></textarea >
-    <button class="copy_clipboard">クリップボードにコピー</button>
 </body>
 </html>
