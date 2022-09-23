@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head><meta charset="utf-8"></head>
+    <script type="text/javascript" src="C:/_千春/010_Web作業/pyFilile/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+    /* 全てにチェックを付ける */
+    function All_check(tf) {
+    var elems = document.getElementsByClassName("liver");
+    for (var i = 0; i < elems.length; i++) {
+        elems[i].checked = tf;
+        } 
+    }
+
+    $(document).ready(function () {
+        $("#button01").click(function () {
+        let combine_str = document.getElementById('combine_str').value;
+        /* メニューを取得 */
+        var checks = document.getElementsByClassName('liver');
+            var str = '';
+            for ( i = 0; i < checks.length; i++) {
+                if ( checks[i].checked === true ) {
+                    str += checks[i].value + combine_str;
+                }
+            }
+            str = str.slice( 0, -1 ) ;
+            alert(str);
+            var output1 = document.getElementById("Outstring");
+            output1.value = str
+        });
+    });
+    </script>
+
+<body>
+<h1>ファンマーク出てくるやつ</h1>
+<input type="button" value="全て選択" onclick="All_check(true);">
+<input type="button" value="全て解除" onclick="All_check(false);">
+<input type="text" id="combine_str" placeholder="連結文字列：、や・など">
+
+    <div class="form-text-field-all" class="tbl">
+        <form>
+            <table BORDER="1" style="font-size: 75%;">
+                <tr>
+                <td>2021年<input type="checkbox" id="Dv_check_2021"></td>
+                <td><label>アクシア・クローネ<input type="checkbox" class="liver dv2021" value="🐈‍⬛"></label></td>
+                <td><label>ローレン・イロアス<input type="checkbox" class="liver dv2021" value="🗝💸"></label></td>
+                <td><label>レオス・ヴィンセント<input type="checkbox" class="liver dv2021" value="🥼🌱😺"></label></td>
+                <td><label>オリバー・エバンス<input type="checkbox" class="liver dv2021" value="🍵"></label></td>
+                <td><label>レイン・パターソン<input type="checkbox" class="liver dv2021" value="❤️‍🔥"></label></td>
+                </tr>
+                <tr>
+                <td>2022年</td>
+                <td><label>天ヶ瀬むゆ<input type="checkbox" class="liver dv2022" value="💭"></label></td>
+                <td><label>先斗寧<input type="checkbox" class="liver dv2022" value="🫐"></label></td>
+                <td><label>海妹四葉<input type="checkbox" class="liver dv2022" value="🍀"></label></td>
+                <td><label>壱百満天原サロメ<input type="checkbox" class="liver dv2022" value="💯🦂"></label></td>
+                <td><label>風楽奏斗<input type="checkbox" class="liver dv2022" value="🍝🍷"></label></td>
+                <td><label>渡会雲雀<input type="checkbox" class="liver dv2022" value="♦️☕"></label></td>
+                <td><label>四季凪アキラ<input type="checkbox" class="liver dv2022" value="📄"></label></td>
+                <td><label>セラフ・ダズルガーデン<input type="checkbox" class="liver dv2022" value="&#129417;&#127931;"></label></td>
+                </tr>
+            </table>
+
+            <input id="button01" type="button" value="ボタン1"/>
+        </form>
+    </div>
+    <textarea type="text" id="Outstring" placeholder="&#129417;&#127931;"></textarea >
+
+
+</body>
+
+</html>
