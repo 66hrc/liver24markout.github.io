@@ -21,7 +21,11 @@
                     str += checks[i].value + combine_str;
                 }
             }
-            str = str.slice( 0, -1 ) ;
+            if( combine_str.length === 0 ) {
+            }else{
+            combine_num = combine_str.length
+            str = str.slice( 0, -(combine_num)); //一文字削除
+            }
             alert(str);
             var output1 = document.getElementById("Outstring");
             output1.value = str
@@ -73,7 +77,7 @@
                 <td><label>風楽奏斗<input type="checkbox" class="liver dv2022" value="🍝🍷"></label></td>
                 <td><label>渡会雲雀<input type="checkbox" class="liver dv2022" value="♦️☕"></label></td>
                 <td><label>四季凪アキラ<input type="checkbox" class="liver dv2022" value="📄"></label></td>
-                <td><label>セラフ・ダズルガーデン<input type="checkbox" class="liver dv2022" value="🦉&#127931;"></label></td>
+                <td><label>セラフ・ダズルガーデン<input type="checkbox" class="liver dv2022" value="🦉🎻"></label></td>
                 </tr>
             </table>
 
