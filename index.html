@@ -7,9 +7,8 @@
     function All_check(tf) {
     var elems = document.getElementsByClassName("liver");
     for (var i = 0; i < elems.length; i++) {
-        elems[i].checked = tf;
-        } 
-    }
+        elems[i].checked = tf; 
+    }}
 
     $(document).ready(function () {
         $("#button01").click(function () {
@@ -28,6 +27,24 @@
             output1.value = str
         });
     });
+
+    /* グループごと */  
+    $(function(){
+        var Dv_check = document.getElementsByClassName('DvAll'); //チェックボックスのnameを指定
+        $( Dv_check ).on( 'click', function() {
+            var clickDvid =  $(this).data('name');
+            var Dv_checkid = document.getElementById(clickDvid); //「すべて」のチェックボックスのidを指定
+            var checkBox = document.getElementsByClassName(clickDvid); //チェックボックスのnameを指定
+            var boxCount = $( checkBox ).length; //全チェックボックスの数を取得
+            
+            if (this.checked) {      // チェックされていたら全ての個別チェックボックスを選択状態に
+            $(checkBox).prop('checked', true);
+            } else {            // チェックされていなければ全ての個別チェックボックスを選択解除
+            $(checkBox).prop('checked', false);
+            }
+        });
+    });
+
     </script>
 
 <body>
@@ -40,7 +57,7 @@
         <form>
             <table BORDER="1" style="font-size: 75%;">
                 <tr>
-                <td>2021年<input type="checkbox" id="Dv_check_2021"></td>
+                <td>2021年<input type="checkbox" id="dv2021" data-name="dv2021" class="DvAll"></td>
                 <td><label>アクシア・クローネ<input type="checkbox" class="liver dv2021" value="🐈‍⬛"></label></td>
                 <td><label>ローレン・イロアス<input type="checkbox" class="liver dv2021" value="🗝💸"></label></td>
                 <td><label>レオス・ヴィンセント<input type="checkbox" class="liver dv2021" value="🥼🌱😺"></label></td>
@@ -48,7 +65,7 @@
                 <td><label>レイン・パターソン<input type="checkbox" class="liver dv2021" value="❤️‍🔥"></label></td>
                 </tr>
                 <tr>
-                <td>2022年</td>
+                <td>2022年<input type="checkbox" id="dv2022" data-name="dv2022" class="DvAll"></td>
                 <td><label>天ヶ瀬むゆ<input type="checkbox" class="liver dv2022" value="💭"></label></td>
                 <td><label>先斗寧<input type="checkbox" class="liver dv2022" value="🫐"></label></td>
                 <td><label>海妹四葉<input type="checkbox" class="liver dv2022" value="🍀"></label></td>
