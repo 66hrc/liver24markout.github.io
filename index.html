@@ -34,7 +34,7 @@
 
     /* グループごと */  
     $(function(){
-        var Dv_check = document.getElementsByClassName('DvAll'); //チェックボックスのnameを指定
+        var Dv_check = document.getElementsByClassName('DvAll'); 
         $( Dv_check ).on( 'click', function() {
             var clickDvid =  $(this).data('name');
             var Dv_checkid = document.getElementById(clickDvid); //「すべて」のチェックボックスのidを指定
@@ -57,15 +57,15 @@
     alert("コピーしました");
     }
 
-
     // チェックボックスを含む td 要素をクリックしたときに、チェックボックスをクリック
-    $('td:has(input[type=checkbox])').on('click', function(e){
+    $(document).on('click', 'td.cellclick', function(){
         $(this).find('input[type=checkbox]').click();
     });
     // バブリングを防止
-    $('td input[type=checkbox]').on('click', function(e){
+    $(document).on('click', 'td.cellclick', function(){
         e.stopPropagation();
     });
+    
     </script>
 
 <body>
