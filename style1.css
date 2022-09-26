@@ -1,0 +1,12 @@
+table{
+    border-collapse:collapse;
+    margin:0 auto;
+  }
+  td,th{
+    border:1px solid #ccc;
+    padding:10px;
+  }
+  th{
+    border-left:5px solid #005ab3;
+    color:#005ab3;
+  }
