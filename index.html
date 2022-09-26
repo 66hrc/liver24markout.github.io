@@ -60,12 +60,9 @@
     // チェックボックスを含む td 要素をクリックしたときに、チェックボックスをクリック
     $(document).on('click', 'td.cellclick', function(){
         $(this).find('input[type=checkbox]').click();
+        e.stopPropagation();    // バブリングを防止
     });
-    // バブリングを防止
-    $(document).on('click', 'td.cellclick', function(){
-        e.stopPropagation();
-    });
-    
+
     </script>
 
 <body>
