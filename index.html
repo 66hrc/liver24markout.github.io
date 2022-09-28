@@ -92,189 +92,191 @@
 <input type="button" value="全て解除" onclick="All_check(false);">
 <input type="text" id="combine_str" placeholder="連結文字列：、や・など">
 
+<p><textarea type="text" id="Outstring" placeholder="ここに結果がでます"></textarea ></p>
+    
     <div class="form-text-field-all" class="tbl">
         <table id="TABLE1" >
             <tr> <!-- 1期生出身 -->
                 <th>1期生出身<input type="checkbox" id="dv1kisei" data-name="dv1kisei" class="DvAll"></th>
-                <td>月ノ美兎<input type="checkbox" class="liver dv1kisei" value="🐰"></td>
-                <td>勇気ちひろ<input type="checkbox" class="liver dv1kisei" value="🎀💙"></td>
-                <td>える<input type="checkbox" class="liver dv1kisei" value="🗼"></td>
-                <td>樋口楓<input type="checkbox" class="liver dv1kisei" value="🍁"></td>
-                <td>静凛<input type="checkbox" class="liver dv1kisei" value="💜🥦"></td>
-                <td>渋谷ハジメ<input type="checkbox" class="liver dv1kisei" value="🌱"></td>
-                <td>鈴谷アキ<input type="checkbox" class="liver dv1kisei" value="🐈"></td>
-                <td>モイラ<input type="checkbox" class="liver dv1kisei" value="ﾓ"></td>
+                <td>月ノ美兎<input type="checkbox" id="no0001" class="liver dv1kisei" value="🐰"></td>
+                <td>勇気ちひろ<input type="checkbox" id="no0002" class="liver dv1kisei" value="🎀💙"></td>
+                <td>える<input type="checkbox" id="no0003" class="liver dv1kisei" value="🗼"></td>
+                <td>樋口楓<input type="checkbox" id="no0004" class="liver dv1kisei" value="🍁"></td>
+                <td>静凛<input type="checkbox" id="no0005" class="liver dv1kisei" value="💜🥦"></td>
+                <td>渋谷ハジメ<input type="checkbox" id="no0006" class="liver dv1kisei" value="🌱"></td>
+                <td>鈴谷アキ<input type="checkbox" id="no0007" class="liver dv1kisei" value="🐈"></td>
+                <td>モイラ<input type="checkbox" id="no0008" class="liver dv1kisei" value="ﾓ"></td>
             </tr>
             <tr> <!-- 2期生出身 -->
                 <th rowspan="2">2期生出身<input type="checkbox" id="dv2kisei" data-name="dv2kisei" class="DvAll"></th>
-                <td>鈴鹿詩子<input type="checkbox" class="liver dv2kisei" value="🎶"></td>
-                <td>宇志海いちご<input type="checkbox" class="liver dv2kisei" value="🍓"></td>
-                <td>家長むぎ<input type="checkbox" class="liver dv2kisei" value="🌷"></td>
-                <td>夕陽リリ<input type="checkbox" class="liver dv2kisei" value="🌇"></td>
-                <td>物述有栖<input type="checkbox" class="liver dv2kisei" value="♥️♠️♦️♣️"></td>
+                <td>鈴鹿詩子<input type="checkbox" id="no0009" class="liver dv2kisei" value="🎶"></td>
+                <td>宇志海いちご<input type="checkbox" id="no0010" class="liver dv2kisei" value="🍓"></td>
+                <td>家長むぎ<input type="checkbox" id="no0011" class="liver dv2kisei" value="🌷"></td>
+                <td>夕陽リリ<input type="checkbox" id="no0012" class="liver dv2kisei" value="🌇"></td>
+                <td>物述有栖<input type="checkbox" id="no0013" class="liver dv2kisei" value="♥️♠️♦️♣️"></td>
                 </tr><tr>
-                <td>文野環<input type="checkbox" class="liver dv2kisei" value="🐟"></td>
-                <td>伏見ガク<input type="checkbox" class="liver dv2kisei" value="✌🦊"></td>
-                <td>ギルザレンIII世<input type="checkbox" class="liver dv2kisei" value="🏰🌑"></td>
-                <td>剣持刀也<input type="checkbox" class="liver dv2kisei" value="⚔️"></td>
-                <td>森中花咲<input type="checkbox" class="liver dv2kisei" value="🐻🌼"></td>
+                <td>文野環<input type="checkbox" id="no0014" class="liver dv2kisei" value="🐟"></td>
+                <td>伏見ガク<input type="checkbox" id="no0015" class="liver dv2kisei" value="✌🦊"></td>
+                <td>ギルザレンIII世<input type="checkbox" id="no0016" class="liver dv2kisei" value="🏰🌑"></td>
+                <td>剣持刀也<input type="checkbox" id="no0017" class="liver dv2kisei" value="⚔️"></td>
+                <td>森中花咲<input type="checkbox" id="no0018" class="liver dv2kisei" value="🐻🌼"></td>
             </tr>
             <tr> <!-- ゲーマーズ出身 -->
                 <th>ゲーマーズ出身<input type="checkbox" id="dvgamers" data-name="dvgamers" class="DvAll"></th>
-                <td>叶<input type="checkbox" class="liver dvgamers" value="🔫"></td>
-                <td>赤羽葉子<input type="checkbox" class="liver dvgamers" value="💀"></td>
-                <td>笹木咲<input type="checkbox" class="liver dvgamers" value="🎋"></td>
-                <td>本間ひまわり<input type="checkbox" class="liver dvgamers" value="🌻"></td>
-                <td>魔界ノりりむ<input type="checkbox" class="liver dvgamers" value="🍼"></td>
-                <td>葛葉<input type="checkbox" class="liver dvgamers" value="🎲"></td>
-                <td>椎名唯華<input type="checkbox" class="liver dvgamers" value="👻"></td>
+                <td>叶<input type="checkbox" id="no0019" class="liver dvgamers" value="🔫"></td>
+                <td>赤羽葉子<input type="checkbox" id="no0020" class="liver dvgamers" value="💀"></td>
+                <td>笹木咲<input type="checkbox" id="no0021" class="liver dvgamers" value="🎋"></td>
+                <td>本間ひまわり<input type="checkbox" id="no0023" class="liver dvgamers" value="🌻"></td>
+                <td>魔界ノりりむ<input type="checkbox" id="no0024" class="liver dvgamers" value="🍼"></td>
+                <td>葛葉<input type="checkbox" id="no0025" class="liver dvgamers" value="🎲"></td>
+                <td>椎名唯華<input type="checkbox" id="no0027" class="liver dvgamers" value="👻"></td>
             </tr>
             <tr> <!-- SEEDs1期生出身 -->
                 <th>SEEDs1期生出身<input type="checkbox" id="dvseeds1" data-name="dvseeds1" class="DvAll"></th>
-                <td>ドーラ<input type="checkbox" class="liver dvseeds1" value="🔥"></td>
-                <td>轟京子<input type="checkbox" class="liver dvseeds1" value="🐐"></td>
-                <td>シスター・クレア<input type="checkbox" class="liver dvseeds1" value="🔔"></td>
-                <td>花畑チャイカ<input type="checkbox" class="liver dvseeds1" value="🌵"></td>
-                <td>社築<input type="checkbox" class="liver dvseeds1" value="🖥"></td>
-                <td>安土桃<input type="checkbox" class="liver dvseeds1" value="🍑"></td>
-                <td>鈴木勝<input type="checkbox" class="liver dvseeds1" value="☪"></td>
-                <td>緑仙<input type="checkbox" class="liver dvseeds1" value="🐼"></td>
-                <td>卯月コウ<input type="checkbox" class="liver dvseeds1" value="🌙"></td>
+                <td>ドーラ<input type="checkbox" id="no0028" class="liver dvseeds1" value="🔥"></td>
+                <td>轟京子<input type="checkbox" id="no0032" class="liver dvseeds1" value="🐐"></td>
+                <td>シスター・クレア<input type="checkbox" id="no0033" class="liver dvseeds1" value="🔔"></td>
+                <td>花畑チャイカ<input type="checkbox" id="no0034" class="liver dvseeds1" value="🌵"></td>
+                <td>社築<input type="checkbox" id="no0035" class="liver dvseeds1" value="🖥"></td>
+                <td>安土桃<input type="checkbox" id="no0036" class="liver dvseeds1" value="🍑"></td>
+                <td>鈴木勝<input type="checkbox" id="no0037" class="liver dvseeds1" value="☪"></td>
+                <td>緑仙<input type="checkbox" id="no0038" class="liver dvseeds1" value="🐼"></td>
+                <td>卯月コウ<input type="checkbox" id="no0039" class="liver dvseeds1" value="🌙"></td>
             </tr>
             <tr> <!-- SEEDs2期生出身 -->
                 <th rowspan="2">SEEDs2期生出身<input type="checkbox" id="dvseeds2" data-name="dvseeds2" class="DvAll"></th>
-                <td>神田笑一<input type="checkbox" class="liver dvseeds2" value="🔪🍅"></td>
-                <td>飛鳥ひな<input type="checkbox" class="liver dvseeds2" value="🐤"></td>
-                <td>春崎エアル<input type="checkbox" class="liver dvseeds2" value="🍭"></td>
-                <td>雨森小夜<input type="checkbox" class="liver dvseeds2" value="☂️☔️"></td>
-                <td>鷹宮リオン<input type="checkbox" class="liver dvseeds2" value="🦅"></td>
-                <td>舞元啓介<input type="checkbox" class="liver dvseeds2" value="👨‍🌾"></td>
-                <td>竜胆尊<input type="checkbox" class="liver dvseeds2" value="🍶⚜️"></td>
-                <td>でびでび・でびる<input type="checkbox" class="liver dvseeds2" value="🚪👿"></td>
+                <td>神田笑一<input type="checkbox" id="no0041" class="liver dvseeds2" value="🔪🍅"></td>
+                <td>飛鳥ひな<input type="checkbox" id="no0043" class="liver dvseeds2" value="🐤"></td>
+                <td>春崎エアル<input type="checkbox" id="no0044" class="liver dvseeds2" value="🍭"></td>
+                <td>雨森小夜<input type="checkbox" id="no0045" class="liver dvseeds2" value="☂️☔️"></td>
+                <td>鷹宮リオン<input type="checkbox" id="no0046" class="liver dvseeds2" value="🦅"></td>
+                <td>舞元啓介<input type="checkbox" id="no0047" class="liver dvseeds2" value="👨‍🌾"></td>
+                <td>竜胆尊<input type="checkbox" id="no0048" class="liver dvseeds2" value="🍶⚜️"></td>
+                <td>でびでび・でびる<input type="checkbox" id="no0049" class="liver dvseeds2" value="🚪👿"></td>
                 </tr><tr>
-                <td>桜凛月<input type="checkbox" class="liver dvseeds2" value="🌸"></td>
-                <td>町田ちま<input type="checkbox" class="liver dvseeds2" value="🐹"></td>
-                <td>ジョー・力一<input type="checkbox" class="liver dvseeds2" value="🤡🎈"></td>
-                <td>成瀬鳴<input type="checkbox" class="liver dvseeds2" value="🎙"></td>
-                <td>ベルモンド・バンデラス<input type="checkbox" class="liver dvseeds2" value="🥃"></td>
-                <td>矢車りね<input type="checkbox" class="liver dvseeds2" value="🌽"></td>
-                <td>夢追翔<input type="checkbox" class="liver dvseeds2" value="🎤"></td>
-                <td>黒井しば<input type="checkbox" class="liver dvseeds2" value="🐕🐾"></td>
+                <td>桜凛月<input type="checkbox" id="no0040" class="liver dvseeds2" value="🌸"></td>
+                <td>町田ちま<input type="checkbox" id="no0051" class="liver dvseeds2" value="🐹"></td>
+                <td>ジョー・力一<input type="checkbox" id="no0053" class="liver dvseeds2" value="🤡🎈"></td>
+                <td>成瀬鳴<input type="checkbox" id="no0055" class="liver dvseeds2" value="🎙"></td>
+                <td>ベルモンド・バンデラス<input type="checkbox" id="no0056" class="liver dvseeds2" value="🥃"></td>
+                <td>矢車りね<input type="checkbox" id="no0057" class="liver dvseeds2" value="🌽"></td>
+                <td>夢追翔<input type="checkbox" id="no0058" class="liver dvseeds2" value="🎤"></td>
+                <td>黒井しば<input type="checkbox" id="no0059" class="liver dvseeds2" value="🐕🐾"></td>
                 </tr>
             <tr> <!-- 2019年1～3月デビュー -->
                 <th>2019年1～3月デビュー<input type="checkbox" id="dv20190103" data-name="dv20190103" class="DvAll"></th>
-                <td>郡道美玲<input type="checkbox" class="liver dv20190103" value="🐽"></td>
-                <td>夢月ロア<input type="checkbox" class="liver dv20190103" value="🌖"></td>
-                <td>小野町春香<input type="checkbox" class="liver dv20190103" value="♨️"></td>
-                <td>語部紡<input type="checkbox" class="liver dv20190103" value="🧂📘"></td>
-                <td>瀬戸美夜子<input type="checkbox" class="liver dv20190103" value="📷💚"></td>
-                <td>戌亥とこ<input type="checkbox" class="liver dv20190103" value="🍹"></td>
-                <td>アンジュ・カトリーナ<input type="checkbox" class="liver dv20190103" value="⚖"></td>
-                <td>リゼ・ヘルエスタ<input type="checkbox" class="liver dv20190103" value="👑"></td>
+                <td>郡道美玲<input type="checkbox" id="no0062" class="liver dv20190103" value="🐽"></td>
+                <td>夢月ロア<input type="checkbox" id="no0063" class="liver dv20190103" value="🌖"></td>
+                <td>小野町春香<input type="checkbox" id="no0064" class="liver dv20190103" value="♨️"></td>
+                <td>語部紡<input type="checkbox" id="no0065" class="liver dv20190103" value="🧂📘"></td>
+                <td>瀬戸美夜子<input type="checkbox" id="no0066" class="liver dv20190103" value="📷💚"></td>
+                <td>戌亥とこ<input type="checkbox" id="no0068" class="liver dv20190103" value="🍹"></td>
+                <td>アンジュ・カトリーナ<input type="checkbox" id="no0069" class="liver dv20190103" value="⚖"></td>
+                <td>リゼ・ヘルエスタ<input type="checkbox" id="no0070" class="liver dv20190103" value="👑"></td>
             </tr>
             <tr> <!-- 2019年4～6月デビュー -->
                 <th>2019年4～6月デビュー<input type="checkbox" id="dv20190406" data-name="dv20190406" class="DvAll"></th>
-                <td>三枝明那<input type="checkbox" class="liver dv20190406" value="🌶️"></td>
-                <td>愛園愛美<input type="checkbox" class="liver dv20190406" value="💕"></td>
-                <td>雪城眞尋<input type="checkbox" class="liver dv20190406" value="🌐💫"></td>
-                <td>エクス・アルビオ<input type="checkbox" class="liver dv20190406" value="🛡"></td>
-                <td>レヴィ・エリファ<input type="checkbox" class="liver dv20190406" value="🔲"></td>
-                <td>葉山舞鈴<input type="checkbox" class="liver dv20190406" value="🍃🗻"></td>
-                <td>ニュイ・ソシエール<input type="checkbox" class="liver dv20190406" value="🎃"></td>
+                <td>三枝明那<input type="checkbox" id="no0071" class="liver dv20190406" value="🌶️"></td>
+                <td>愛園愛美<input type="checkbox" id="no0072" class="liver dv20190406" value="💕"></td>
+                <td>雪城眞尋<input type="checkbox" id="no0074" class="liver dv20190406" value="🌐💫"></td>
+                <td>エクス・アルビオ<input type="checkbox" id="no0075" class="liver dv20190406" value="🛡"></td>
+                <td>レヴィ・エリファ<input type="checkbox" id="no0076" class="liver dv20190406" value="🔲"></td>
+                <td>葉山舞鈴<input type="checkbox" id="no0077" class="liver dv20190406" value="🍃🗻"></td>
+                <td>ニュイ・ソシエール<input type="checkbox" id="no0078" class="liver dv20190406" value="🎃"></td>
             </tr>  
             <tr> <!-- 2019年7～9月デビュー -->
                 <th rowspan="2">2019年7～9月デビュー<input type="checkbox" id="dv20190709" data-name="dv20190709" class="DvAll"></th>
-                <td>葉加瀬冬雪<input type="checkbox" class="liver dv20190709" value="⚗"></td>
-                <td>加賀美ハヤト<input type="checkbox" class="liver dv20190709" value="🏢"></td>
-                <td>夜見れな<input type="checkbox" class="liver dv20190709" value="🎩🐤"></td>
-                <td>アルス・アルマル<input type="checkbox" class="liver dv20190709" value="📕"></td>
-                <td>相羽ういは<input type="checkbox" class="liver dv20190709" value="🍮💎"></td>
+                <td>葉加瀬冬雪<input type="checkbox" id="no0079" class="liver dv20190709" value="⚗"></td>
+                <td>加賀美ハヤト<input type="checkbox" id="no0080" class="liver dv20190709" value="🏢"></td>
+                <td>夜見れな<input type="checkbox" id="no0081" class="liver dv20190709" value="🎩🐤"></td>
+                <td>アルス・アルマル<input type="checkbox" id="no0083" class="liver dv20190709" value="📕"></td>
+                <td>相羽ういは<input type="checkbox" id="no0084" class="liver dv20190709" value="🍮💎"></td>
                 </tr><tr>
-                <td>天宮こころ<input type="checkbox" class="liver dv20190709" value="🎐"></td>
-                <td>エリー・コニファー<input type="checkbox" class="liver dv20190709" value="🌲"></td>
-                <td>ラトナ・プティ<input type="checkbox" class="liver dv20190709" value="🐻💎"></td>
-                <td>早瀬走<input type="checkbox" class="liver dv20190709" value="🏃‍♀️💨🚴‍♀️"></td>
-                <td>健屋花那<input type="checkbox" class="liver dv20190709" value="💉💘"></td>
-                <td>シェリン・バーガンディ<input type="checkbox" class="liver dv20190709" value="🧐"></td>
+                <td>天宮こころ<input type="checkbox" id="no0085" class="liver dv20190709" value="🎐"></td>
+                <td>エリー・コニファー<input type="checkbox" id="no0086" class="liver dv20190709" value="🌲"></td>
+                <td>ラトナ・プティ<input type="checkbox" id="no0087" class="liver dv20190709" value="🐻💎"></td>
+                <td>早瀬走<input type="checkbox" id="no0088" class="liver dv20190709" value="🏃‍♀️💨🚴‍♀️"></td>
+                <td>健屋花那<input type="checkbox" id="no0089" class="liver dv20190709" value="💉💘"></td>
+                <td>シェリン・バーガンディ<input type="checkbox" id="no0090" class="liver dv20190709" value="🧐"></td>
             </tr>
             <tr> <!-- 2019年10～12月デビュー -->
                 <th rowspan="2">2019年10～12月デビュー<input type="checkbox" id="dv20191012" data-name="dv20191012" class="DvAll"></th>
-                <td>フミ<input type="checkbox" class="liver dv20191012" value="🔖"></td>
-                <td>星川サラ<input type="checkbox" class="liver dv20191012" value="🌟"></td>
-                <td>山神カルタ<input type="checkbox" class="liver dv20191012" value="🎴"></td>
-                <td>えま★おうがすと<input type="checkbox" class="liver dv20191012" value="★"></td>
-                <td>ルイス・キャミー<input type="checkbox" class="liver dv20191012" value="❤️🦋"></td>
-                <td>魔使マオ<input type="checkbox" class="liver dv20191012" value="💥"></td>
+                <td>フミ<input type="checkbox" id="no0091" class="liver dv20191012" value="🔖"></td>
+                <td>星川サラ<input type="checkbox" id="no0092" class="liver dv20191012" value="🌟"></td>
+                <td>山神カルタ<input type="checkbox" id="no0093" class="liver dv20191012" value="🎴"></td>
+                <td>えま★おうがすと<input type="checkbox" id="no0094" class="liver dv20191012" value="★"></td>
+                <td>ルイス・キャミー<input type="checkbox" id="no0095" class="liver dv20191012" value="❤️🦋"></td>
+                <td>魔使マオ<input type="checkbox" id="no0096" class="liver dv20191012" value="💥"></td>
                 </tr><tr>
-                <td>不破湊<input type="checkbox" class="liver dv20191012" value="🥂✨"></td>
-                <td>白雪巴<input type="checkbox" class="liver dv20191012" value="👠⛓"></td>
-                <td>グウェル・オス・ガール<input type="checkbox" class="liver dv20191012" value="😎"></td>
-                <td>ましろ爻<input type="checkbox" class="liver dv20191012" value="🧷"></td>
-                <td>奈羅花<input type="checkbox" class="liver dv20191012" value="✖🍳"></td>
-                <td>来栖夏芽<input type="checkbox" class="liver dv20191012" value="🐏🎵"></td>
+                <td>不破湊<input type="checkbox" id="no0097" class="liver dv20191012" value="🥂✨"></td>
+                <td>白雪巴<input type="checkbox" id="no0098" class="liver dv20191012" value="👠⛓"></td>
+                <td>グウェル・オス・ガール<input type="checkbox" id="no0099" class="liver dv20191012" value="😎"></td>
+                <td>ましろ爻<input type="checkbox" id="no0100" class="liver dv20191012" value="🧷"></td>
+                <td>奈羅花<input type="checkbox" id="no0101" class="liver dv20191012" value="✖🍳"></td>
+                <td>来栖夏芽<input type="checkbox" id="no0102" class="liver dv20191012" value="🐏🎵"></td>
             </tr>
             <tr> <!-- 2020年デビュー -->
                 <th rowspan="2">2020年デビュー<input type="checkbox" id="dv2020" data-name="dv2020" class="DvAll"></th>
-                <td>フレン・E・ルスタリオ<input type="checkbox" class="liver dv2020" value="🎠"></td>
-                <td>イブラヒム<input type="checkbox" class="liver dv2020" value="💧"></td>
-                <td>長尾景<input type="checkbox" class="liver dv2020" value="☯"></td>
-                <td>弦月藤士郎<input type="checkbox" class="liver dv2020" value="🎻🛵"></td>
-                <td>甲斐田晴<input type="checkbox" class="liver dv2020" value="🌞"></td>
-                <td>空星きらめ<input type="checkbox" class="liver dv2020" value="🌌"></td>
+                <td>フレン・E・ルスタリオ<input type="checkbox" id="no0103" class="liver dv2020" value="🎠"></td>
+                <td>イブラヒム<input type="checkbox" id="no0105" class="liver dv2020" value="💧"></td>
+                <td>長尾景<input type="checkbox" id="no0106" class="liver dv2020" value="☯"></td>
+                <td>弦月藤士郎<input type="checkbox" id="no0107" class="liver dv2020" value="🎻🛵"></td>
+                <td>甲斐田晴<input type="checkbox" id="no0108" class="liver dv2020" value="🌞"></td>
+                <td>空星きらめ<input type="checkbox" id="no0109" class="liver dv2020" value="🌌"></td>
                 </tr><tr>
-                <td>朝日南アカネ<input type="checkbox" class="liver dv2020" value="🦖🎖"></td>
-                <td>周央サンゴ<input type="checkbox" class="liver dv2020" value="💞🦩"></td>
-                <td>東堂コハク<input type="checkbox" class="liver dv2020" value="🍯"></td>
-                <td>北小路ヒスイ<input type="checkbox" class="liver dv2020" value="❇"></td>
-                <td>西園チグサ<input type="checkbox" class="liver dv2020" value="🐬🌱"></td>
+                <td>朝日南アカネ<input type="checkbox" id="no0110" class="liver dv2020" value="🦖🎖"></td>
+                <td>周央サンゴ<input type="checkbox" id="no0111" class="liver dv2020" value="💞🦩"></td>
+                <td>東堂コハク<input type="checkbox" id="no0112" class="liver dv2020" value="🍯"></td>
+                <td>北小路ヒスイ<input type="checkbox" id="no0113" class="liver dv2020" value="❇"></td>
+                <td>西園チグサ<input type="checkbox" id="no0114" class="liver dv2020" value="🐬🌱"></td>
             </tr>
             <tr> <!-- 2021年デビュー -->
                 <th>2021年デビュー<input type="checkbox" id="dv2021" data-name="dv2021" class="DvAll"></th>
-                <td>アクシア・クローネ<input type="checkbox" class="liver dv2021" value="🐈‍⬛"></td>
-                <td>ローレン・イロアス<input type="checkbox" class="liver dv2021" value="🗝💸"></td>
-                <td>レオス・ヴィンセント<input type="checkbox" class="liver dv2021" value="🥼🌱😺"></td>
-                <td>オリバー・エバンス<input type="checkbox" class="liver dv2021" value="🍵"></td>
-                <td>レイン・パターソン<input type="checkbox" class="liver dv2021" value="❤️‍🔥"></td>
+                <td>アクシア・クローネ<input type="checkbox" id="no0115" class="liver dv2021" value="🐈‍⬛"></td>
+                <td>ローレン・イロアス<input type="checkbox" id="no0116" class="liver dv2021" value="🗝💸"></td>
+                <td>レオス・ヴィンセント<input type="checkbox" id="no0117" class="liver dv2021" value="🥼🌱😺"></td>
+                <td>オリバー・エバンス<input type="checkbox" id="no0118" class="liver dv2021" value="🍵"></td>
+                <td>レイン・パターソン<input type="checkbox" id="no0119" class="liver dv2021" value="❤️‍🔥"></td>
                 </tr>
             <tr> <!-- 2022年デビュー -->
                 <th>2022年デビュー<input type="checkbox" id="dv2022" data-name="dv2022" class="DvAll"></th>
-                <td>天ヶ瀬むゆ<input type="checkbox" class="liver dv2022" value="💭"></td>
-                <td>先斗寧<input type="checkbox" class="liver dv2022" value="🫐"></td>
-                <td>海妹四葉<input type="checkbox" class="liver dv2022" value="🍀"></td>
-                <td>壱百満天原サロメ<input type="checkbox" class="liver dv2022" value="💯🦂"></td>
-                <td>風楽奏斗<input type="checkbox" class="liver dv2022" value="🍝🍷"></td>
-                <td>渡会雲雀<input type="checkbox" class="liver dv2022" value="♦️☕"></td>
-                <td>四季凪アキラ<input type="checkbox" class="liver dv2022" value="📄"></td>
-                <td>セラフ・ダズルガーデン<input type="checkbox" class="liver dv2022" value="🦉🎻"></td>
+                <td>天ヶ瀬むゆ<input type="checkbox" id="no0120" class="liver dv2022" value="💭"></td>
+                <td>先斗寧<input type="checkbox" id="no0121" class="liver dv2022" value="🫐"></td>
+                <td>海妹四葉<input type="checkbox" id="no0122" class="liver dv2022" value="🍀"></td>
+                <td>壱百満天原サロメ<input type="checkbox" id="no0123" class="liver dv2022" value="💯🦂"></td>
+                <td>風楽奏斗<input type="checkbox" id="no0124" class="liver dv2022" value="🍝🍷"></td>
+                <td>渡会雲雀<input type="checkbox" id="no0125" class="liver dv2022" value="♦️☕"></td>
+                <td>四季凪アキラ<input type="checkbox" id="no0126" class="liver dv2022" value="📄"></td>
+                <td>セラフ・ダズルガーデン<input type="checkbox" id="no0127" class="liver dv2022" value="🦉🎻"></td>
             </tr>
-	    <tr> <!-- ENメンバー -->
+            <tr> <!-- ENメンバー -->
                 <th rowspan="2">ENメンバー<input type="checkbox" id="ENdv_member" data-name="ENdv_member" class="DvAll"></th>
-                <td>エリーラ・ペンドラ<input type="checkbox" class="liver ENdv_member" value="🌤"></td>
-                <td>ぽむ・れいんぱふ<input type="checkbox" class="liver ENdv_memberv" value="🧚🍂"></td>
-                <td>フィナーナ・竜宮<input type="checkbox" class="liver ENdv_member" value="🐠"></td>
-                <td>セレン・龍月<input type="checkbox" class="liver ENdv_member" value="🏆"></td>
-                <td>ロゼミ・ラブロック<input type="checkbox" class="liver ENdv_member" value="🌹"></td>
-                <td>ペトラ・グリン<input type="checkbox" class="liver ENdv_member" value="🐧❄"></td>
-                <td>エナー・アールウェット<input type="checkbox" class="liver ENdv_member" value="🕊🎐"></td>
-                <td>狐坂ニナ<input type="checkbox" class="liver ENdv_member" value="🎰"></td>
-                <td>遠藤霊夢<input type="checkbox" class="liver ENdv_member" value="👻🎼"></td>
-                <td>ミリー・パフェ<input type="checkbox" class="liver ENdv_member" value="🪄"></td>
+                <td>エリーラ・ペンドラ<input type="checkbox" id="no3001" class="liver ENdv_member" value="🌤"></td>
+                <td>ぽむ・れいんぱふ<input type="checkbox" id="no3002" class="liver ENdv_memberv" value="🧚🍂"></td>
+                <td>フィナーナ・竜宮<input type="checkbox" id="no3003" class="liver ENdv_member" value="🐠"></td>
+                <td>セレン・龍月<input type="checkbox" id="no3004" class="liver ENdv_member" value="🏆"></td>
+                <td>ロゼミ・ラブロック<input type="checkbox" id="no3005" class="liver ENdv_member" value="🌹"></td>
+                <td>ペトラ・グリン<input type="checkbox" id="no3006" class="liver ENdv_member" value="🐧❄"></td>
+                <td>エナー・アールウェット<input type="checkbox" id="no3007" class="liver ENdv_member" value="🕊🎐"></td>
+                <td>狐坂ニナ<input type="checkbox" id="no3008" class="liver ENdv_member" value="🎰"></td>
+                <td>遠藤霊夢<input type="checkbox" id="no3009" class="liver ENdv_member" value="👻🎼"></td>
+                <td>ミリー・パフェ<input type="checkbox" id="no3010" class="liver ENdv_member" value="🪄"></td>
                 </tr><tr>
-                <td>アイク・イーヴランド<input type="checkbox" class="liver ENdv_member" value="🖋"></td>
-                <td>ミスタ・リアス<input type="checkbox" class="liver ENdv_memberv" value="🕵‍♂🦊"></td>
-                <td>ヴォックス・アクマ<input type="checkbox" class="liver ENdv_member" value="👹🧧"></td>
-                <td>ルカ・カネシロ<input type="checkbox" class="liver ENdv_member" value="🦁💰"></td>
-                <td>闇ノシュウ<input type="checkbox" class="liver ENdv_member" value="👟☯️"></td>
-                <td>アルバーン・ノックス<input type="checkbox" class="liver ENdv_member" value="🎭🕒"></td>
-                <td>遊間ユーゴ<input type="checkbox" class="liver ENdv_member" value="🎧"></td>
-                <td>ファルガー・オーヴィド<input type="checkbox" class="liver ENdv_member" value="⚡️🐏"></td>
-                <td>サニー・ブリスコー<input type="checkbox" class="liver ENdv_member" value="🔗🤲"></td>
-                <td>浮奇・ヴィオレタ<input type="checkbox" class="liver ENdv_member" value="🔮🌌"></td>
+                <td>アイク・イーヴランド<input type="checkbox" id="no3011" class="liver ENdv_member" value="🖋"></td>
+                <td>ミスタ・リアス<input type="checkbox" id="no3012" class="liver ENdv_memberv" value="🕵‍♂🦊"></td>
+                <td>ヴォックス・アクマ<input type="checkbox" id="no3013" class="liver ENdv_member" value="👹🧧"></td>
+                <td>ルカ・カネシロ<input type="checkbox" id="no3014" class="liver ENdv_member" value="🦁💰"></td>
+                <td>闇ノシュウ<input type="checkbox" id="no3015" class="liver ENdv_member" value="👟☯️"></td>
+                <td>アルバーン・ノックス<input type="checkbox" id="no3016" class="liver ENdv_member" value="🎭🕒"></td>
+                <td>遊間ユーゴ<input type="checkbox" id="no3016" class="liver ENdv_member" value="🎧"></td>
+                <td>ファルガー・オーヴィド<input type="checkbox" id="no3017" class="liver ENdv_member" value="⚡️🐏"></td>
+                <td>サニー・ブリスコー<input type="checkbox" id="no3018" class="liver ENdv_member" value="🔗🤲"></td>
+                <td>浮奇・ヴィオレタ<input type="checkbox" id="no3019" class="liver ENdv_member" value="🔮🌌"></td>
             </tr>
         </table>
 
 
     </div>
-    <textarea type="text" id="Outstring" placeholder="ここに結果がでます"></textarea >
+
 </body>
 </html>
