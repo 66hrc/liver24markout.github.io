@@ -11,15 +11,16 @@
         elems[i].checked = tf; 
     }}
 
-
-    /* 出力ボタン */  
+    /* 出力ボタン */
+    function output_run () {
     $("#button01").click(function () {
+        console.log('出力ボタンが押されました') 
     let combine_str = document.getElementById('combine_str').value;
-    var checks = document.getElementsByClassName('liver');
+    var livers = document.getElementsByClassName('liver');
         var str = '';
-        for ( i = 0; i < checks.length; i++) {
-            if ( checks[i].checked === true ) {
-                str += checks[i].value + combine_str;
+        for ( i = 0; i < livers.length; i++) {
+            if ( livers[i].checked === true ) {
+                str += livers[i].value + combine_str;
             }
         }
         if( combine_str.length === 0 ) {
@@ -30,6 +31,8 @@
         var output1 = document.getElementById("Outstring");
         output1.value = str
     });
+    }
+
 
     /* グループごと */  
     $(function(){
@@ -85,7 +88,7 @@
 <body>
 <h1>ファンマーク出てくるやつ</h1>
 卒業ライバーは除く作業時点の元JPメンバーのみ、統合後への更新追加は時間のある時<br>
-<input type="button" id="button01" type="button" value="出力実行"/>
+<input type="button" id="button01" value="出力実行"  onclick="output_run()">
 <input type="button" value="コピー" onclick="clipboadCopy()">
 <input type="button" value="全て選択" onclick="All_check(true);">
 <input type="button" value="全て解除" onclick="All_check(false);">
@@ -253,4 +256,3 @@
     <textarea type="text" id="Outstring" placeholder="ここに結果がでます"></textarea >
 </body>
 </html>
-
